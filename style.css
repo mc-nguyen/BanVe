@@ -39,6 +39,8 @@ input, textarea {
 }
 input::placeholder {
     color: #666;
+    font-weight: bolder;
+    font-size: 20;
 }
 button {
     width: 100%;
