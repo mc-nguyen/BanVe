@@ -3,5 +3,7 @@ function calculation() {
     let money = document.getElementById("money").value;
     let changes = document.getElementById("changes").value;
 
-    document.getElementById("tickets").innerHTML = sold*25;
+    document.getElementById("tickets").innerHTML = 25 * sold;
+    document.getElementById("profit").innerHTML = money - changes;
+    document.getElementById("donation").innerHTML = money - changes - 25 * sold;
 }
