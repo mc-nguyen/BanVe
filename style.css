@@ -54,7 +54,7 @@ button {
 button:hover {
     background: #2371a0;
 }
-@media (min-width: 500px) {
+@media (max-width: 800px) {
     .main-block {
         flex-direction: row;
     }
