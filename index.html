@@ -6,31 +6,26 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="main-block">
-            <div class="left-part" align="center">
-                <img src="FlyerHCHT18.png" height="500px">
+        <section class="form-ticket">
+            <h1>Info bán vé:</h1>
+            <div class="place">
+                <input type="text" placeholder="Họ Tên">
+                <input type="text" placeholder="Tên Nhà Thờ">
+                <input type="text" placeholder="Ngày/Giờ">
             </div>
-            <section class="form-ticket">
-                <h1>Info bán vé:</h1>
-                <div class="place">
-                    <input type="text" placeholder="Họ Tên">
-                    <input type="text" placeholder="Tên Nhà Thờ">
-                    <input type="text" placeholder="Ngày/Giờ">
-                </div>
-                <h1>Tính tiền sau khi mua vé:</h1>
-                <div class="info">
-                    <input id="sold" type="number" name="sold" placeholder="Số vé bán ra">
-                    <input id="money" type="number" name="money" placeholder="Số tiền trong tay">
-                    <input id="changes" type="number" name="changes" placeholder="Số tiền thối">
-                </div>
-                <button type="Tính Tiền" onclick="calculation()">Submit</button>
-                <div>
-                    <h2>Tiền profit: <strong id="profit">0</strong></h2>
-                    <h2>Tiền cho bán vé: <strong id="tickets">0</strong></h2>
-                    <h2>Tiền donation: <strong id="donation">0</strong></h2>
-                </div>
-            </section>
-        </div>
+            <h1>Tính tiền sau khi mua vé:</h1>
+            <div class="info">
+                <input id="sold" type="number" name="sold" placeholder="Số vé bán ra">
+                <input id="money" type="number" name="money" placeholder="Số tiền trong tay">
+                <input id="changes" type="number" name="changes" placeholder="Số tiền thối">
+            </div>
+            <button type="Tính Tiền" onclick="calculation()">Submit</button>
+            <div>
+                <h2>Tiền profit: <strong id="profit">0</strong></h2>
+                <h2>Tiền cho bán vé: <strong id="tickets">0</strong></h2>
+                <h2>Tiền donation: <strong id="donation">0</strong></h2>
+            </div>
+        </section>
         <script src="javascript.js"></script>
     </body>
 </html>
