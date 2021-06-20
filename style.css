@@ -54,11 +54,3 @@ button {
 button:hover {
     background: #2371a0;
 }
-@media (max-width: 800px) {
-    .main-block {
-        flex-direction: row;
-    }
-    .left-part, .form-ticket {
-        width: 50%;
-    }
-}
