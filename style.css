@@ -20,7 +20,6 @@ p {
 }
 .result {
     padding-top: 2%;
-    padding-left: 20%;
 }
 section {
     position: fixed;
@@ -39,6 +38,12 @@ section {
     width: 40%;
     float: right;
     padding: 5px;
+}
+.icon {
+    width: 20%;
+    float: left;
+    padding-top: 5px;
+    padding-right: 10px;
 }
 .form-ticket {
     padding: 25px;
