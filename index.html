@@ -9,18 +9,29 @@
         <section class="form-ticket">
             <div class="place">
                 <h1>Info bán vé:</h1>
-                <input type="text" placeholder="Họ Tên" size="50">
-                <input type="text" placeholder="Tên Nhà Thờ" size="50">
-                <input type="text" placeholder="Ngày/Giờ" size="50">
+                <label for="ten">Tên:</label>
+                <input type="text" id="ten">
+                <label for="nhatho">Nhà Thờ:</label>
+                <input type="text" id="nhatho">
+                <label for="ngay">Ngày:</label>
+                <input type="date" id="ngay">
+                <label for="gio">Giờ:</label>
+                <input type="time" id="gio">
             </div>
             <div class="info">
                 <h1>Sau khi mua vé:</h1>
-                <input id="sold" type="number" name="sold" placeholder="Số vé bán ra" size="50">
-                <input id="money" type="number" name="money" placeholder="Số tiền trong tay" size="50">
-                <input id="changes" type="number" name="changes" placeholder="Số tiền thối" size="50">
+                <label for="total">Tổng số vé:</label>
+                <input id="total" type="number" name="total">
+                <label for="rest">Số vé còn lại:</label>
+                <input id="rest" type="number" name="rest">
+                <label for="money">Số tiền tổng cộng:</label>
+                <input id="money" type="number" name="money">
+                <label for="changes">Tiền thối:</label>
+                <input id="changes" type="number" name="changes">
             </div>
             <button type="Tính Tiền" onclick="calculation()">Submit</button>
             <div class="result">
+                <p>Số vé bán được: <strong id="sold">0</strong></p>
                 <p>Tiền profit: <strong id="profit">0</strong></p>
                 <p>Tiền cho bán vé: <strong id="tickets">0</strong></p>
                 <p>Tiền donation: <strong id="donation">0</strong></p>
