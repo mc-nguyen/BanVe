@@ -10,7 +10,7 @@ function calculation() {
     document.getElementById("donation").innerHTML = money - changes - 25 * (total - rest);
 }
 
-var churches = [];
+let churches = [];
 fetch('danhsachnhatho.txt')
     .then(response => response.text())
     .then(text => {
