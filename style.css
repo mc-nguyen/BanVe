@@ -16,12 +16,29 @@ h1 {
 }
 p {
     margin: 0 0 5px;
+    font-size: 25px;
+}
+.result {
+    padding-top: 2%;
+    padding-left: 20%;
 }
 section {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: table;
+    max-width: 600px;
+}
+.place {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+.info {
+    width: 40%;
+    float: right;
+    padding: 5px;
 }
 .form-ticket {
     padding: 25px;
@@ -35,11 +52,12 @@ input, textarea {
     margin-bottom: 20px;
     border: 1px solid #1c87c9;
     outline: none;
+    font-size: 18px;
 }
 input::placeholder {
     color: #666;
     font-weight: bolder;
-    font-size: 20;
+    font-size: 15px;
 }
 button {
     width: 100%;

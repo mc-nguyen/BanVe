@@ -7,23 +7,23 @@
     </head>
     <body>
         <section class="form-ticket">
-            <h1>Info bán vé:</h1>
             <div class="place">
+                <h1>Info bán vé:</h1>
                 <input type="text" placeholder="Họ Tên" size="50">
                 <input type="text" placeholder="Tên Nhà Thờ" size="50">
                 <input type="text" placeholder="Ngày/Giờ" size="50">
             </div>
-            <h1>Tính tiền sau khi mua vé:</h1>
             <div class="info">
+                <h1>Tính tiền sau khi mua vé:</h1>
                 <input id="sold" type="number" name="sold" placeholder="Số vé bán ra" size="50">
                 <input id="money" type="number" name="money" placeholder="Số tiền trong tay" size="50">
                 <input id="changes" type="number" name="changes" placeholder="Số tiền thối" size="50">
             </div>
             <button type="Tính Tiền" onclick="calculation()">Submit</button>
-            <div>
-                <h2>Tiền profit: <strong id="profit">0</strong></h2>
-                <h2>Tiền cho bán vé: <strong id="tickets">0</strong></h2>
-                <h2>Tiền donation: <strong id="donation">0</strong></h2>
+            <div class="result">
+                <p>Tiền profit: <strong id="profit">0</strong></p>
+                <p>Tiền cho bán vé: <strong id="tickets">0</strong></p>
+                <p>Tiền donation: <strong id="donation">0</strong></p>
             </div>
         </section>
         <script src="javascript.js"></script>
