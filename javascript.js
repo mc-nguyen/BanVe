@@ -9,15 +9,3 @@ function calculation() {
     document.getElementById("profit").innerHTML = money - changes;
     document.getElementById("donation").innerHTML = money - changes - 25 * (total - rest);
 }
-
-let churches = [];
-fetch('danhsachnhatho.txt')
-    .then(response => response.text())
-    .then(text => {
-        churches = text.split("\n");
-
-        let options = '';
-        for (let i=0; i<churches.length; ++i)
-            options += '<option value="' + churches[i].trim() + '"/>';
-        document.getElementById("churches").innerHTML = options
-    })
