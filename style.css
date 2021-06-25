@@ -59,6 +59,16 @@ input, textarea {
     outline: none;
     font-size: 18px;
 }
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+    font-size: 18px;
+}
+
 label {
     font-size: 18px;
     padding-bottom: 2px;
