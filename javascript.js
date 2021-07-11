@@ -1,11 +1,37 @@
-function calculation() {
-    let total = document.getElementById("total").value;
-    let rest = document.getElementById("rest").value;
-    let money = document.getElementById("money").value;
-    let changes = document.getElementById("changes").value;
+let total, rest, money, changes;
+let churches = new Vue({
+    el: '#churches',
+    data: {
+        churches: ["Trung Tâm Công Giáo",
+            "Thánh Linh",
+            "La Vang",
+            "Westminster",
+            "St. Cecilia",
+            "Columban",
+            "St. Barbara"
+        ]
+    }
+});
+let result = new Vue({
+    el: '.result',
+    data: {
+        sold: 0,
+        tickets: 0,
+        profit: 0,
+        donation: 0,
+    }
+});
 
-    document.getElementById("sold").innerHTML = total - rest;
-    document.getElementById("tickets").innerHTML = 25 * (total - rest);
-    document.getElementById("profit").innerHTML = money - changes;
-    document.getElementById("donation").innerHTML = money - changes - 25 * (total - rest);
+function calculation() {
+    total = document.getElementById("total").value;
+    rest = document.getElementById("rest").value;
+    money = document.getElementById("money").value;
+    changes = document.getElementById("changes").value;
+
+    result.data = {
+        sold: total - rest,
+        tickets: 25 * (total - rest),
+        profit: money - changes,
+        donation: money - changes - 25 * (total - rest)
+    };
 }
