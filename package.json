@@ -1,0 +1,8 @@
+{
+  "name": "banve",
+  "version": "1.0.0",
+  "dependencies": {
+    "@dangvanthanh/vue-clock": "^0.2.1",
+    "vue": "^2.6.14"
+  }
+}

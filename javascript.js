@@ -1,5 +1,5 @@
 let total, rest, money, changes;
-let churches = new Vue({
+new Vue({
     el: '#churches',
     data: {
         churches: ["Trung Tâm Công Giáo",
