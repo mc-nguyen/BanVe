@@ -1,4 +1,3 @@
-let total, rest, money, changes;
 new Vue({
     el: '#churches',
     data: {
@@ -13,7 +12,7 @@ new Vue({
     }
 });
 let result = new Vue({
-    el: '.result',
+    el: '#result',
     data: {
         sold: 0,
         tickets: 0,
@@ -23,15 +22,13 @@ let result = new Vue({
 });
 
 function calculation() {
-    total = document.getElementById("total").value;
-    rest = document.getElementById("rest").value;
-    money = document.getElementById("money").value;
-    changes = document.getElementById("changes").value;
+    let total = document.getElementById("total").value;
+    let rest = document.getElementById("rest").value;
+    let money = document.getElementById("money").value;
+    let changes = document.getElementById("changes").value;
 
-    result.data = {
-        sold: total - rest,
-        tickets: 25 * (total - rest),
-        profit: money - changes,
-        donation: money - changes - 25 * (total - rest)
-    };
+    result.$data.sold = total - rest;
+    result.$data.tickets = 25 * (total - rest);
+    result.$data.profit = money - changes;
+    result.$data.donation = money - changes - 25 * (total - rest);
 }
